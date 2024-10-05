@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  border: 1px solid;
+  margin: 15px 0;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  border: 1px solid darkblue;
+  padding: 8px;
+}
+
+.table th {
+  background-color: darkolivegreen;
+  color: white;
+}
+.table tr:nth-child(even) {
+  background-color: beige;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.pagination button {
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.pagination button.active {
+  background-color: red;
+  font-weight: bold;
+}
+.pagination button:disabled {
+  background-color: #ddd;
+  color: black;
+}
